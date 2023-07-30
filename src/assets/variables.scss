@@ -1,0 +1,46 @@
+:root {
+  --dark-green: #083f2d;
+  --light-green: #41B883;
+}
+
+/* Responsive */
+$phone: 768px;
+$tablet: 1025px;
+$desktop: 1200px;
+
+/* Media Mixins */
+@mixin desktop-down {
+  @media (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin tablet-up {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin tablet-down {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media (max-width: $tablet) and (min-width: $phone + 1) {
+    @content;
+  }
+}
+
+@mixin phone-up {
+  @media (min-width: $phone + 1) {
+    @content;
+  }
+}
+
+@mixin phone-down {
+  @media (max-width: $phone) {
+    @content;
+  }
+}
