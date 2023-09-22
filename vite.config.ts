@@ -18,9 +18,5 @@ export default defineConfig({
         additionalData: `@use "@/assets/main.scss" as *;`,
       },
     },
-  },
-  build: {
-    outDir: 'public',
-    assetsDir: './dist',
-  },
+  }
 })
