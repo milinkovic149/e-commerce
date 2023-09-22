@@ -35,7 +35,7 @@ const handleAddToCartClick = () => {
 
 <template>
   <div class="product-card">
-    <img :src="product.img" alt="">
+    <img :src="product.img" alt="" width="373" height="373">
     <div class="product-card__text">
       {{product.name}}<span>${{product.price}}</span>
     </div>
