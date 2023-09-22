@@ -38,8 +38,7 @@ const handleAddToCartClick = () => {
     <img :src="product.img" alt="" width="373" height="373" class="product-card__desktop-img" rel="preload">
     <img :src="product.img" alt="" width="310" height="310" class="product-card__responsive-img" rel="preload">
     <div class="product-card__text">
-      {{product.name}}<span>${{product.price}}
-    </span>
+      {{product.name}}<span>${{product.price}}</span>
     </div>
     <div class="product-card__buttons">
       <AppCountInput v-model="count"/>
