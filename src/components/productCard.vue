@@ -36,7 +36,7 @@ const handleAddToCartClick = () => {
 <template>
   <div class="product-card">
     <img :src="product.img" alt="" width="373" height="373" class="product-card__desktop-img" rel="preload">
-    <img :src="product.img" alt="" width="250" height="250" class="product-card__responsive-img" rel="preload">
+    <img :src="product.img" alt="" width="310" height="310" class="product-card__responsive-img" rel="preload">
     <div class="product-card__text">
       {{product.name}}<span>${{product.price}}</span>
     </div>
@@ -60,7 +60,7 @@ const handleAddToCartClick = () => {
     border-radius: 20px;
 
     @include tablet-down {
-      max-width: 250px;
+      max-width: 310px;
     }
 
     @include phone-down {
