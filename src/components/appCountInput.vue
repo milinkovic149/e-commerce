@@ -15,9 +15,10 @@ const updateValue = (value) => {
 </script>
 <template>
   <span>
+
     <button
         class="cursor-pointer bg-gray-200 px-2 rounded-l"
-        :class="{ disabled: modelValue===0 || modelValue===1}"
+        :class="{ disabled: modelValue === 0 || modelValue === 1}"
         @click="updateValue(modelValue > 0 ? modelValue - 1 : null)"
     >
       -
@@ -25,9 +26,11 @@ const updateValue = (value) => {
     <input
         :value="modelValue"
         type="number"
+        id="quantity"
         @input="updateValue($event.target.value)"
         disabled="disabled"
     />
+        <label for="quantity">quantity</label>
     <button
         class="bg-gray-200 px-2 rounded-r cursor-pointer"
         @click="updateValue(modelValue + 1)"
@@ -58,6 +61,11 @@ span {
       -moz-appearance: textfield;
     }
   }
+
+  label {
+    display: none;
+  }
+
   button {
     height: 50px;
     width: 50px;
