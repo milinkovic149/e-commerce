@@ -10,7 +10,7 @@ onClickOutside(el, cartStore.closeCheckout)
 <template>
   <div class="checkout" ref="el">
     <div class="checkout__img-div">
-      <img src="../assets/images/icons/x.svg" alt="" @click="cartStore.closeCheckout">
+      <img src="../assets/img/icons/x.svg" alt="" @click="cartStore.closeCheckout">
     </div>
     <p class="checkout__title">Thank you for shopping with us!</p>
     <div class="checkout__products">

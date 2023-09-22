@@ -13,7 +13,7 @@ onClickOutside(el, cartStore.closeCart)
 <template>
   <div class="cart-wrapper" :class="{'cart-wrapper_active': cartStore.isCartOpen}" ref="el">
     <div class="cart-wrapper__img-div">
-      <img class="cart-wrapper__img-div__img" src="../assets/images/icons/x.svg" alt="" @click="cartStore.closeCart" :class="{'cart-wrapper__img-div__img_active': cartStore.isCartOpen}">
+      <img class="cart-wrapper__img-div__img" src="../assets/img/icons/x.svg" alt="" @click="cartStore.closeCart" :class="{'cart-wrapper__img-div__img_active': cartStore.isCartOpen}">
     </div>
     <div class="cart-wrapper__total" v-if="!cartStore.isEmpty">
       <p>Total: </p>

@@ -12,7 +12,7 @@ defineEmits(["updateCount", "clear"]);
 <template>
   <div class="item">
     <div class="item__products">
-      <img :src="`src/assets/images/products/${product.img}`" alt="" class="item__products__product-img">
+      <img :src="product.img" alt="" class="item__products__product-img">
       <span>{{ product.name }}</span>
     </div>
 
@@ -24,7 +24,7 @@ defineEmits(["updateCount", "clear"]);
       <p class="item__buttons__price">
         ${{ count * product.price }}
       </p>
-      <img src="../assets/images/icons/trash.svg" alt="" class="item__buttons__trash-img" @click="$emit('clear')">
+      <img src="../assets/img/icons/trash.svg" alt="" class="item__buttons__trash-img" @click="$emit('clear')">
     </div>
   </div>
 </template>
@@ -67,7 +67,5 @@ defineEmits(["updateCount", "clear"]);
       font-size: 26px;
     }
   }
-
-
 }
 </style>

@@ -5,7 +5,7 @@ import CartOpenField from './cartOpenField.vue'
 <template>
   <header>
     <div class="header-wrapper">
-      <img src="../assets/images/icons/logo.svg" alt="">
+      <img src="../assets/img/icons/logo.svg" alt="">
       <nav>
         <div class="header-wrapper__cart-div">
           <CartOpenField/>

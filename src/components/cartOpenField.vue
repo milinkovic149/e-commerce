@@ -5,7 +5,7 @@ const cartStore = useCartStore();
 
 <template>
   <div class="cart"   @click="cartStore.openCart()">
-    <img src="../assets/images/icons/cart-icon.svg" alt="">
+    <img src="../assets/img/icons/cart-icon.svg" alt="">
     <div class="cart__items">
       {{ cartStore.count }}
     </div>
