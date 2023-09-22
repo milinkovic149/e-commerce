@@ -35,8 +35,8 @@ const handleAddToCartClick = () => {
 
 <template>
   <div class="product-card">
-    <img :src="product.img" alt="" width="373" height="373" class="product-card__desktop-img">
-    <img :src="product.img" alt="" width="250" height="250" class="product-card__responsive-img">
+    <img :src="product.img" alt="" width="373" height="373" class="product-card__desktop-img" rel="preload">
+    <img :src="product.img" alt="" width="250" height="250" class="product-card__responsive-img" rel="preload">
     <div class="product-card__text">
       {{product.name}}<span>${{product.price}}</span>
     </div>
