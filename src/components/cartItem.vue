@@ -12,7 +12,7 @@ defineEmits(["updateCount", "clear"]);
 <template>
   <div class="item">
     <div class="item__products">
-      <img :src="product.img" alt="" class="item__products__product-img">
+      <img :src="product.img" alt="" class="item__products__product-img" width="373" height="373">
       <span>{{ product.name }}</span>
     </div>
 
