@@ -30,7 +30,6 @@ const updateValue = (value) => {
         @input="updateValue($event.target.value)"
         disabled="disabled"
     />
-        <label for="quantity">quantity</label>
     <button
         class="bg-gray-200 px-2 rounded-r cursor-pointer"
         @click="updateValue(modelValue + 1)"
@@ -60,10 +59,6 @@ span {
     &[type=number] {
       -moz-appearance: textfield;
     }
-  }
-
-  label {
-    display: none;
   }
 
   button {
