@@ -35,7 +35,8 @@ const handleAddToCartClick = () => {
 
 <template>
   <div class="product-card">
-    <img :src="product.img" alt="" width="373" height="373">
+    <img :src="product.img" alt="" width="373" height="373" class="product-card__desktop-img">
+    <img :src="product.img" alt="" width="250" height="250" class="product-card__responsive-img">
     <div class="product-card__text">
       {{product.name}}<span>${{product.price}}</span>
     </div>
@@ -58,6 +59,10 @@ const handleAddToCartClick = () => {
     outline: 1px solid rgba(0, 128, 0, 0.1);
     border-radius: 20px;
 
+    @include tablet-down {
+      max-width: 250px;
+    }
+
     @include phone-down {
       width: 100%;
     }
@@ -70,6 +75,22 @@ const handleAddToCartClick = () => {
     img {
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
+    }
+
+    &__desktop-img {
+      display: flex;
+
+      @include tablet-down {
+        display: none;
+      }
+    }
+
+    &__responsive-img {
+      display: none;
+
+      @include tablet-down {
+        display: flex;
+      }
     }
 
     &__text {
@@ -92,6 +113,11 @@ const handleAddToCartClick = () => {
       padding: 10px 8px 20px;
       gap: 7px;
       flex-wrap: wrap;
+
+      @include tablet-down {
+        justify-content: center;
+        gap: 20px;
+      }
     }
 
     &__warn {
